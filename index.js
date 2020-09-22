@@ -8,6 +8,24 @@ var started = false;
 
 var level = 0;
 
+
+$(".startbtn").click(function() {
+  if (!started) {
+    $("#level-title").text("Level " + level);
+
+    setTimeout(function() {
+      nextSequence();
+    }, 500);
+
+    started = true;
+  }
+  $(".startbtn").addClass("pressed");
+  setTimeout(function() {
+    $(".startbtn").removeClass("pressed");
+  }, 100);
+});
+
+
 $(document).keypress(function() {
   if (!started) {
     $("#level-title").text("Level " + level);
@@ -19,6 +37,7 @@ $(document).keypress(function() {
     started = true;
   }
 });
+
 
 
 $(".btn").click(function() {
