@@ -37,8 +37,7 @@ body {
   cursor: pointer;
   background-color: cyan;
   font-family: 'Press Start 2P', cursive;
-  font-size: 2rem;
-  vertical-align:middle;
+  font-size: 37px;
 }
 
 .game-over {
